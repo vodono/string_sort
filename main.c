@@ -148,7 +148,7 @@ int main() {
     FILE *in, *out;
     element *elementsStorage = createElement(FIRST_LEVEL_SIZE);
 
-    if ((in = fopen("../in", "r")) == NULL) {
+    if ((in = fopen("./in", "r")) == NULL) {
         printf("File can't be opened!\n");
         exit(0);
     }
@@ -163,7 +163,7 @@ int main() {
         }
     }
 
-    if ((out = fopen("../out", "w")) == NULL) {
+    if ((out = fopen("./out", "w")) == NULL) {
         printf("File can't be opened!\n");
         exit(0);
     }
